@@ -1,0 +1,53 @@
+## Libraries Used ##
+    Basnet
+        . sys
+        . os
+        . torch
+        . torch vision
+        . numpy
+        . matplotlib
+        . PIL
+        . glob
+        . skimage
+
+    ReVamp
+        . os
+        . threading
+        . sys
+        . subprocess
+        . tkinter
+        . PIL
+        . numpy
+        . pygame
+        . opencv
+
+## classes and function ##
+    ReVamp
+        camera.py
+            . camera
+                > camera_l0op
+                > start
+                > close
+                > create_overlay
+
+        img_tools.py 
+                > get_rects
+                > draw_rects
+                > get_mask
+                > get_overlay
+                > conv_cv_pygame
+                > conv_pil_pygame
+
+        ui_elements.py
+            . button
+                > hover
+                > display
+                > hide
+                > show
+            
+            . toggle_button
+                > hover
+                > display
+                > hide
+                > show
+                > toggle
