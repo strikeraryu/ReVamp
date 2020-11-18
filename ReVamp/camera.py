@@ -204,27 +204,33 @@ class camera():
                     captures_path = os.path.dirname(
                         __file__) + '\\..\\Captures\\'
 
-                    tkinter.Tk().withdraw()
-                    overlay_path = filedialog.askopenfilename(initialdir = captures_path)
-                    open_overlay = pg.image.load(overlay_path)
+                    try:
+                        tkinter.Tk().withdraw()
+                        overlay_path = filedialog.askopenfilename(initialdir = captures_path)
+                        open_overlay = pg.image.load(overlay_path)
 
-                    self.object_overlays = [open_overlay]
-                    self.object_rects = [(self.width/2 - open_overlay.get_width()/2, self.height/2 - open_overlay.get_height()/2, open_overlay.get_width(), open_overlay.get_height())]
-                    initial_cursor_pos = -1
-                    self.mode = 'overlay'
+                        self.object_overlays = [open_overlay]
+                        self.object_rects = [(self.width/2 - open_overlay.get_width()/2, self.height/2 - open_overlay.get_height()/2, open_overlay.get_width(), open_overlay.get_height())]
+                        initial_cursor_pos = -1
+                        self.mode = 'overlay'
+                    except Exception as e:
+                        pass
 
                 elif ui_elements['object_detect'].hover(self.cursor_pos) and mouse_button == 'press':
                     captures_path = os.path.dirname(
                         __file__) + '\\..\\Captures\\'
 
-                    tkinter.Tk().withdraw()
-                    image_path = filedialog.askopenfilename(initialdir = captures_path)
-                    image = Image.open(image_path)
+                    try:
+                        tkinter.Tk().withdraw()
+                        image_path = filedialog.askopenfilename(initialdir = captures_path)
+                        image = Image.open(image_path)
 
-                    self.mode = 'loading'
-                    overlay_thread = threading.Thread(
-                    target=self.create_overlay, args=(image,))
-                    overlay_thread.start()
+                        self.mode = 'loading'
+                        overlay_thread = threading.Thread(
+                        target=self.create_overlay, args=(image,))
+                        overlay_thread.start()
+                    except Exception as  e:
+                        pass
                     
 
                 elif self.allow_object and mouse_button == 'press' and self.cursor_pos[0] > self.frame_border[0] and self.cursor_pos[1] > self.frame_border[1] and self.cursor_pos[0] < self.width - self.frame_border[0] and self.cursor_pos[1] < self.height - self.frame_border[1]:
