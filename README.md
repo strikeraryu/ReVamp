@@ -1,5 +1,10 @@
 ![Demo](https://github.com/strikeraryu/ReVamp/blob/master/Temp/ReVamp_demo.gif)
 
+
+# Parallax _Image
+ReVamp is a tool created in python which allows you to virtually move real life objects. <br>
+You can check more about ReVamp and how it works on <b>[Medium](https://medium.com/@striker.aryu56/revamp-virtual-renovation-64bfd0f924d7) </b>
+
 ## Required libraries
 1. python
 1. PILLOW
@@ -26,9 +31,6 @@ You can also install [IP webcam](https://play.google.com/store/apps/details?id=c
 ## UI and features of ReVamp
 ![Demo](https://github.com/strikeraryu/ReVamp/blob/master/Temp/demo.png)
 
-
-### You can check more about ReVamp
-[Medium](https://medium.com/@striker.aryu56/revamp-virtual-renovation-64bfd0f924d7)
 
 
 ### More Links
