@@ -1,7 +1,7 @@
 ![Demo](https://github.com/strikeraryu/ReVamp/blob/master/Temp/ReVamp_demo.gif)
 
 
-# Parallax _Image
+# ReVamp
 ReVamp is a tool created in python which allows you to virtually move real life objects. <br>
 You can check more about ReVamp and how it works on <b>[Medium](https://medium.com/@striker.aryu56/revamp-virtual-renovation-64bfd0f924d7) </b>
 
